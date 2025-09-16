@@ -1,0 +1,29 @@
+.team-container {
+    margin-top: 75px;
+}
+
+
+.team-container h2 {
+    font-style: italic;
+}
+
+.team-container .team-card {
+    display: block;
+}
+
+.team-container .team-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+}
+
+.team-container .splide__slide img {
+    border-radius: 14px;
+
+}
+
+@media (max-width:990px) {
+    .team-container{
+        margin-top: 40px;
+    }
+}

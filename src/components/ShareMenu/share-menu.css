@@ -1,0 +1,41 @@
+.share-menu-bar {
+  display: flex;
+  align-items: center;
+  background: var(--color-primary-dark);
+  padding: 6px 12px;
+  border-radius: 4px;
+  gap: 12px;
+  color: #fff;
+}
+
+.share-label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.share-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.share-menu-bar img{
+    width: 15px;
+}
+
+.share-icon:hover {
+  transform: scale(1.2);
+  color: #ffcc00; /* highlight on hover */
+}
+
+.share-icon.close {
+  margin-left: auto;
+}
+

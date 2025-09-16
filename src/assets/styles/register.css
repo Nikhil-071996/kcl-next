@@ -1,0 +1,93 @@
+
+
+.register{
+    /* background: linear-gradient(28deg, #330d69 0%, #c20b0b 100%); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+
+.register form{
+        box-shadow: 0px 7px 25.5px rgba(0, 0, 0, 0.3);
+}
+
+.register .container{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    flex-direction: column;
+
+}
+
+.register .container .column-1{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        padding-top: 80px;
+}
+
+.register .page-team-header h2{
+    margin-bottom: 0;
+}
+
+.register .container .column-1 img{
+    width: 75%;
+}
+
+.register .container .column-1 h1{
+    font-style: italic;
+    color: var(--color-highlight-dark);
+    text-align: center;
+
+}
+
+.register .container .column-2{
+    width: 80%;
+
+    background-color: #fff;
+    border-radius: 19px;
+
+    overflow-y: hidden;
+}
+
+.register .container .column-2::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	background-color: var(--color-body-light);
+	border-radius: 100px;
+}
+
+.register .container .column-2::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: var(--color-body-light);
+	border-radius: 100px;
+}
+
+.register .container .column-2::-webkit-scrollbar-thumb
+{
+	border-radius: 100px;
+	background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0, #330d69),
+  color-stop(1, #c20b0b)
+);
+
+}
+
+
+@media (max-width:990px) {
+    .register .container .column-2{
+        width: 100%;
+    }
+}

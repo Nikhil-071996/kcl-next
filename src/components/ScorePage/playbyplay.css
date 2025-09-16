@@ -1,0 +1,64 @@
+.playbyplay-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.playbyplay-container .playbyplay-card {
+  display: flex;
+  align-items: center;
+      background: linear-gradient(28deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+  padding: 12px 16px;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.playbyplay-container .playbyplay-left {
+  margin-right: 12px;
+}
+
+.playbyplay-container .minute-circle {
+  background: var(--color-highlight-light);
+  color: #000;
+  font-weight: bold;
+  border-radius: 100%;
+  font-size: 14px;
+  width: 40px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playbyplay-container .playbyplay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.playbyplay-container .event-text {
+  font-weight: bold;
+  margin: 0;
+  font-size: 15px;
+}
+
+.playbyplay-container .score {
+  font-size: 13px;
+  margin-top: 4px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.playbyplay-container .load-more {
+  text-align: center;
+  color: white;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.playbyplay-container .load-more:hover {
+  text-decoration: underline;
+}

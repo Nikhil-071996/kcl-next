@@ -1,0 +1,86 @@
+.scorecard {
+  background: #111c4e;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.scorecard-section {
+  margin-bottom: 30px;
+}
+
+.scorecard-section h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.scorecard-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.scorecard-table th,
+.scorecard-table td {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+}
+
+.scorecard-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.player-name {
+  font-weight: bold;
+  color: #222;
+}
+
+.jersey {
+  color: orange;
+  font-weight: 500;
+  margin-left: 4px;
+}
+
+.player-role {
+  font-size: 12px;
+  color: #666;
+}
+
+/* ✅ Your existing styles stay the same */
+
+/* Responsive Scroll for Mobile/Tablets */
+@media (max-width: 1250px) {
+  .scorecard-table {
+    display: block;
+    overflow-x: auto;   /* Enable horizontal scroll */
+    white-space: nowrap; /* Prevent table cells from wrapping */
+  }
+
+  /* Optional: Make table scroll smoother */
+  .scorecard-table::-webkit-scrollbar {
+    height: 8px; /* Scrollbar height */
+  }
+
+  .scorecard-table::-webkit-scrollbar-track {
+    background: #eee; 
+    border-radius: 8px;
+  }
+
+  .scorecard-table::-webkit-scrollbar-thumb {
+    background: #111c4e; /* Matches scorecard background */
+    border-radius: 8px;
+  }
+
+  .scorecard-table::-webkit-scrollbar-thumb:hover {
+    background: #ff9800; /* Highlight on hover */
+  }
+}
+

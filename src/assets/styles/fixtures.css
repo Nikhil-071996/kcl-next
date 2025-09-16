@@ -1,0 +1,404 @@
+.fixtures-page {
+    margin-top: 101px;
+    padding-bottom: 69px;
+}
+
+/* Fixtures Header */
+.page-fixtures-header {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.page-fixtures-header .content h2 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.fixtures-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixtures-buttons-container button {
+    all: unset;
+    width: fit-content;
+    padding: 15px 69px;
+    background-color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    color: var(--color-primary-dark);
+}
+
+.fixtures-buttons-container button.active {
+    background-color: var(--color-highlight-dark);
+    color: var(--color-primary-light);
+
+}
+
+.fixtures-buttons-container button:nth-child(2) {
+    border: 1px solid var(--color-accent-dark);
+}
+
+.fixtures-buttons-container button:nth-child(1) {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.fixtures-buttons-container button:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+
+
+/* Match Fixtures Cards */
+
+
+.fs-27 {
+    font-size: 27px;
+    margin-bottom: 16px;
+}
+
+.fs-13 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+p.teams-name {
+    line-height: 1.2;
+    text-align: right;
+    max-width: 80px;
+}
+
+p.teams-name:last-child {
+    text-align: left;
+}
+
+.icon-text-group-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Icon and text alignment */
+.icon-text-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-text-group img {
+    width: 24px !important;
+    height: 24px !important;
+    flex-shrink: 0;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+
+.fixture-card-section {
+    background-color: #fff;
+    padding: 25px 0;
+}
+
+.fixture-card-section .container {
+    width: 65vw;
+}
+
+.fixtures-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.fixtures-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 25px;
+}
+
+.fixture-card {
+    display: flex;
+    gap: 8px;
+    overflow: hidden;
+    color: #000;
+}
+
+
+.fixture-card .section-1 {
+    background: linear-gradient(270deg, var(--color-primary-dark) 0%, var(--color-primary-light) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+    color: #fff;
+    border-radius: 12px;
+    padding: 18px 22px;
+}
+
+.fixture-card .section-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-body-gray);
+    border-radius: 12px;
+    flex: 1;
+    padding: 20px;
+}
+
+/* Override general image width for team logos and arrow */
+.fixture-card .section-1 .icon-text-group img,
+.fixture-card .section-2 .fitures-team img,
+.fixture-card .section-2 .arrow-icon {
+    width: auto;
+}
+
+.fixture-card .section-2 .fitures-team img {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+.fixture-card .section-2 .arrow-icon {
+    width: 25px;
+    margin-left: 6px;
+}
+
+.fixture-card .section-2 .fitures-match-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.fitures-score {
+    width: fit-content;
+    background-color: var(--color-highlight-dark);
+    text-align: center;
+    padding: 4px 32px;
+    border-radius: 120px;
+}
+
+.full-time-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 140px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.full-time {
+    background-color: var(--color-success-btn);
+    border-radius: 80px;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+.fitures-team {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 180px;
+    flex-shrink: 0;
+    flex-direction: row;
+    text-align: center;
+}
+
+.fitures-team:first-child {
+    justify-content: flex-end;
+}
+
+.teams-flex{
+    display: flex;
+}
+
+.fitures-team:last-child {
+    justify-content: flex-start;
+}
+
+.fitures-score {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary-light);
+}
+
+.fixture-card img.arrow-icon {
+    width: 25px;
+}
+
+/* Mobile and tablet responsive layout */
+@media (max-width: 1024px) {
+    .fs-13 {
+        font-size: 14px;
+    }
+
+    .fixtures-cards-container {
+        gap: 32px;
+    }
+
+    .fixture-card-section .container {
+        width: 80%;
+    }
+
+    .fixture-card {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .icon-text-group-container {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .fixture-card .section-1 {
+        width: 100%;
+        padding: 22px;
+    }
+
+    .fixture-card .section-2 {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .fixture-card .section-2 .fitures-team img {
+        width: 80px;
+        height: auto;
+    }
+
+    .fixture-card .section-2 .fitures-match-body {
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .fitures-team {
+        text-align: center;
+        min-width: auto;
+        justify-content: center;
+        gap: 0;
+    }
+
+    p.teams-name {
+        max-width: 70px;
+        font-size: 16px;
+        line-height: 1.1;
+    }
+
+    .icon-text-group img {
+        width: 24px !important;
+        height: 24px !important;
+        flex-shrink: 0;
+    }
+
+    .full-time-container {
+        width: max-content;
+    }
+
+    .full-time {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .fitures-score-section {
+        width: 100%;
+    }
+
+    .fitures-score {
+        padding: 8px;
+        font-size: 24px;
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .arrow-icon {
+        display: none;
+    }
+}
+
+@media (max-width :990px) {
+    
+    .fixtures-page {
+        margin-top: 93px;
+        padding-bottom: 29px;
+    }
+
+    .fixture-card .section-1 {
+        padding: 10px;
+    }
+
+    .page-fixtures-header {
+        padding: 25px 0;
+    }
+
+    .fixtures-buttons-container button {
+        width: 33%;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .fixture-card-section .container{
+        width: 90vw;
+    }
+
+    .fs-27 {
+        font-size: 18px;
+        /* text-align: center; */
+        margin-bottom: 16px;
+    }
+
+        .fs-13 {
+        font-size: 12px;
+    }
+
+    .fixture-card .section-2{
+        padding: 10px;
+    }
+
+    .fixture-card .section-2 .fitures-team img{
+        width: 45px ;
+    }
+
+    .full-time-container{
+        min-width: auto;
+    }
+
+    .full-time {
+        padding: 3px 6px;
+        font-size: 10px;
+        margin-top: 0 !important;
+    }
+
+        .fitures-score {
+        padding: 5px 16px;
+        font-size: 16px;
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    p.teams-name {
+        max-width: 58px;
+        font-size: 12px;
+    }
+}

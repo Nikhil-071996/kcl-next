@@ -1,0 +1,30 @@
+/* Picture Slider  */
+
+.picture-slider-coontainer{
+  position: relative;
+}
+
+.picture-container{
+  height: auto;
+  aspect-ratio: 219/123;
+}
+
+.picture-container img{
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+
+.picture-slider-coontainer .arrow-container-right{
+  right: 0%;  
+}
+
+.picture-slider-coontainer .arrow-container-left{
+  right: 5%;
+  left: auto;
+}
+
+.picture-slider-coontainer::after{
+  
+}

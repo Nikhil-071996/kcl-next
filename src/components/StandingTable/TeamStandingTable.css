@@ -1,0 +1,166 @@
+
+
+.leaderboard-container {
+  overflow-x: auto;
+
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;         /* allow horizontal scroll */
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+}
+
+.leaderboard-table {
+  border-collapse: collapse;
+  min-width: 900px;         
+  width: 100%;
+}
+
+.sticky-col {
+  position: sticky;
+  left: 0;                  
+  background: #fff;         
+  z-index: 2;
+}
+
+thead .sticky-col {
+  background: linear-gradient(28deg, var(--color-primary-light) 0%, #002091 100%);
+  color: #fff;
+}
+
+.leaderboard-table tbody tr:nth-child(even) .sticky-col {
+  background-color: #ddd;
+}
+
+.leaderboard-container h2 {
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+thead{
+    background: linear-gradient(28deg, var(--color-primary-light) 0%, var(--color-primary-dark) 100%);
+}
+
+
+
+.leaderboard-table th {
+  border-bottom: 1px solid #ddd;
+  padding: 14px 22px;
+
+}
+
+.leaderboard-table td {
+  padding: 9px 22px;
+
+}
+
+.leaderboard-table th {
+  color: #fff;
+  font-size: 16px;
+}
+
+.leaderboard-table tbody tr:nth-child(even) {
+  background-color: #ddd;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.trhighlight {
+  font-weight: bold;
+}
+
+.form-icons {
+  display: flex;
+}
+
+td.team-name {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+td.team-name img {
+  width: 70px;
+}
+
+.form-icon {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 100%;
+  color: #fff;
+  font-size: 16px;
+}
+
+.form-icon.W {
+  background-color: #009c25;
+}
+
+.form-icon.L {
+  background-color: #ff0000;
+}
+
+.form-icon.D {
+  background-color: black;
+}
+
+
+@media (max-width:990px) {
+  td.team-name{
+    font-size: 12px;
+  }
+
+  .leaderboard-container {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .sticky-col{
+    width: 180px;
+  }
+
+  thead .sticky-col{
+    width: 180px;
+  }
+
+  td.team-name img{
+    width: 50px;
+  }
+
+  .leaderboard-table td {
+    padding: 5px 12px;
+    font-size: 12px;
+}
+
+.leaderboard-table th{
+   padding: 9px 12px;
+   font-size: 12px;
+}
+
+.form-icon{
+  width: 25px;
+    height: 25px;
+  font-size: 12px;
+}
+
+
+}

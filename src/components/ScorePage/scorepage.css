@@ -1,0 +1,153 @@
+.scorePage{
+    margin-top: 101px;
+    background-color: var(--color-primary-light);
+    padding-bottom: 50px;
+}
+
+.page-score-header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    color: #fff;
+}
+
+.match-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.match-info p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.match-info .status {
+  display: inline-block;
+  background: var(--color-primary-dark);
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  
+}
+
+.teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin: 30px 0;
+}
+
+.team-score-container{
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  gap: 60px;
+}
+
+
+.team-logo {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-logo img {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.team-score-container h2 {
+  font-size: 16px;
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.score {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.score-left {
+  font-size: 50px;
+  font-weight: bold;
+  color: var(--color-highlight-dark);
+  margin-bottom: 19px;
+}
+
+.ft {
+    margin-bottom: 19px;
+  width: 50px;
+  aspect-ratio: 1;
+  font-size: 16px;
+  background: var(--color-success-btn);
+  color: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #d1d5db;
+  text-align: center;
+}
+
+
+
+
+@media (max-width:990px) {
+
+    .scorePage {
+        margin-top: 93px;
+    }
+
+
+    .team-score-container{
+      gap: 16px;
+    }
+
+    .teams{
+      gap: 16px;
+    }
+    .score-left{
+      font-size: 24px;
+    }
+
+    .team-logo{
+      width: 50px;
+      height: 50px;
+    }
+
+    .team-logo img{
+      width: 40px;
+      height: 40px;
+    }
+
+    .team-score-container h2{
+      /* font-size: 14px; */
+    }
+
+    .ft{
+      width: 20px;
+      font-size: 12px;
+    }
+}

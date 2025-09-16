@@ -1,0 +1,278 @@
+.form-contents{
+    margin-top: 70px;
+}
+
+.floating-form-container{
+    height: auto;
+    width: 100%;
+}
+
+
+.floating-form-container.smaller{
+    position: fixed;
+    width: 50%;
+    height: auto;
+    left: 60%;
+    top: 50%;
+    transform: translate(-60%, -50%) !important;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 21.4px 0px #0000004A;
+    padding: 0;
+}
+
+.floating-form-container .heading{
+    background-color: var(--color-primary-light);
+    color: #fff;
+    font-weight: 700;
+    padding: 19px;
+}
+
+
+
+.floating-form-container .heading h2{
+    margin: 0;
+    font-weight: 700;
+}
+
+
+form{
+    background-color: var(--color-body-light);
+}
+
+form .form-container .section-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    row-gap: 27px;
+    background-color: var(--color-body-light);
+}
+
+form .form-container  h2{
+    font-weight: 700;
+}
+
+.input-container-floating-form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.input-container-floating-form input{
+    border: 1px solid #0000001A;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 13px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-container-floating-form input.form-control:focus{
+    color: #000;
+    background-color: #fff;
+    border-color: #0000001A;
+    outline: 0;
+    box-shadow: none;
+}
+
+.input-container-floating-form select.form-control:focus{
+    color: #000;
+    background-color: #fff;
+    border-color: #0000001A;
+    outline: 0;
+    box-shadow: none;
+}
+
+.input-container-floating-form select{
+    border: 1px solid #0000001A;
+    border-radius: 5px;
+    outline: none;
+    padding: 10px 13px;
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: none;
+}
+
+.input-container-floating-form label{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.react-quill{
+    border: 1px solid #0000001A;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 700;
+    overflow: hidden;
+    padding: 10px 13px;
+    height: 100px;
+}
+
+.react-quill.is-invalid{
+    border: 1px solid red !important;
+
+}
+
+.checkbox-group{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.react-quill .ql-toolbar.ql-snow,.react-quill .ql-container.ql-snow{
+    border: none;
+}
+
+.input-container-floating-form input::placeholder{
+    color: #00000047;
+}
+
+.react-quill .ql-editor.ql-blank::before{
+    /* color: #00000047 !important; */
+    color: #00000047 !important;
+    font-style: normal !important;
+
+}
+
+form .form-container .wid-50{
+    width: 49%;
+}
+
+form .form-container .wid-30{
+    width: 32%;
+}
+
+form .form-container .wid-100{
+    width: 100%;
+}
+
+.form-rule{
+    border: 1px solid ;
+    color: #D1D1D1;
+    opacity: 1;
+}
+
+.form-btn-container{
+    padding: 25px 22px 25px;
+    background-color: var(--color-body-light);
+    border-top: 1px solid #D1D1D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.form-btn-container button{
+        padding: 12px 31px;
+    background-color: #fff;
+    border: 2px solid var(--color-primary-light);
+    font-size: 0.95rem;
+    background-color: var(--color-primary-light);
+    color: #fff;
+    line-height: 1;
+    border-radius: 7px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+    width: fit-content;
+}
+
+.form-btn-container button:hover{
+    background-color: transparent;
+    color: var(--color-primary-light);
+    border: 2px solid var(--color-primary-light);
+}
+
+.form-btn-container button[type="reset"]{
+    background-color: transparent;
+    color: #000;
+}
+
+
+/* Select File */
+
+ .file-select {
+  display: block;
+  border: 1px solid #0000001A;
+  color: #34495e;
+  cursor: pointer;
+  text-align: left;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-select .file-select-button {
+  background: #3D4151;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 1px solid #0000000F;
+  display: inline-block;
+  padding: 10px 13px;
+  cursor: pointer;
+}
+
+.file-select .file-select-name {
+  display: inline-block;
+  padding: 10px 13px;
+}
+
+.file-select input[type="file"] {
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.file-select.file-select-disabled {
+  opacity: 0.65;
+}
+
+.file-select.file-select-disabled:hover {
+  cursor: default;
+  border: 2px solid #dce4ec;
+  color: #34495e;
+  background: #ffffff;
+}
+
+.file-select.file-select-disabled:hover .file-select-button {
+  background: #dce4ec;
+  color: #666666;
+}
+
+.file-select.file-select-disabled:hover .file-select-name {
+  color: #666666;
+}
+
+.error {
+  color: var(--color-accent-light);
+  font-size: 12px;
+}
+/* Select File */
+
+
+@media (max-width : 990px) {
+    form .form-container .section-1{
+        padding: 30px 10px;
+    }
+    form .form-container .wid-50{
+        width: 100%;
+    }
+
+    form .form-container .wid-30{
+        width: 100%;
+    }
+
+}

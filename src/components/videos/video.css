@@ -1,0 +1,190 @@
+.video-container {
+    margin-top: 75px;
+}
+
+.video-container h2 {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.heading-container h2 {
+    margin-bottom: 0px !important;
+    margin: 0 auto;
+}
+
+.heading-container a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+}
+
+.heading-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.video-content-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.video-card {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+}
+
+.video-image-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 269/400;
+    overflow: hidden;
+}
+
+.video-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.video-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    padding: 20px;
+    color: white;
+}
+
+.play-button {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    background: white;
+    transform: scale(1.1);
+}
+
+.play-button img {
+    width: 20px;
+    height: 20px;
+    filter: invert(0);
+}
+
+.video-info {
+    margin-top: 10px;
+}
+
+.video-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 8px 0;
+    line-height: 1.2;
+}
+
+.video-subtitle {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+    line-height: 1.3;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+    .video-content-container {
+        gap: 15px;
+    }
+
+    .video-overlay {
+        padding: 15px;
+    }
+
+    .play-button {
+        width: 45px;
+        height: 45px;
+        bottom: 60px;
+        left: 15px;
+    }
+
+    .play-button img {
+        width: 18px;
+        height: 18px;
+    }
+
+    .video-title {
+        font-size: 16px;
+    }
+
+    .video-subtitle {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 990px) {
+
+    .video-container {
+    margin-top: 40px;
+}
+
+    .video-content-container {
+        gap: 20px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;  
+  -webkit-overflow-scrolling: touch;
+    }
+
+    .video-card {
+        width: 100%;
+        margin: 0;
+        min-width: 100%;    /* show one card at a time */
+  flex-shrink: 0;     /* prevent shrinking */
+  scroll-snap-align: start; 
+    }
+
+    .video-overlay {
+        padding: 20px;
+    }
+
+    .play-button {
+        width: 50px;
+        height: 50px;
+        bottom: 70px;
+        left: 20px;
+    }
+
+    .play-button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .heading-container h2 {
+        margin: 0;
+    }
+}

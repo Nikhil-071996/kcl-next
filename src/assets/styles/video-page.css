@@ -1,0 +1,11 @@
+.video-page {
+    margin-top: 101px;
+}
+
+
+@media (max-width:990px) {
+    .video-page {
+        margin-top: 93px;
+    }
+
+}
